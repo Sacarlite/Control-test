@@ -41,5 +41,14 @@ namespace GB1
             }
             return listOfStrings.ToArray();
         }
+        static void ConsoleOutput(ref string[] text)
+        {
+            Console.WriteLine("Отфильтрованный массив");
+            for (int i = 0; i < text.GetLength(0); i++)
+            {
+                Console.WriteLine(text[i]);         
+
+            }
+        }
      }
  }
