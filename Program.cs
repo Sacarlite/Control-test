@@ -11,6 +11,8 @@ namespace GB1
         {
              String[] text = Array.Empty<string>();
              text = AddText();
+              text = Filter(ref text);
+            ConsoleOutput(ref text);
         }
         static string[] AddText(){
             Console.WriteLine("Введите текст.По окончание ввода введите пустую строку");
